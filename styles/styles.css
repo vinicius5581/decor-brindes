@@ -1,10 +1,10 @@
- /* Add your CSS styles here */
- body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 header {
     background-color: #fff;
     color: black;
@@ -70,4 +70,35 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Media query for screens up to 768px wide (mobile devices) */
+@media (max-width: 768px) {
+
+    header img {
+        max-width: 80vw
+    }
+    .container .fundamentos,
+    .container .steps {
+        display: block;
+    }
+    .container .fundamentos > div,
+    .container .steps > div {
+        width: 100%;
+        margin: 0 0 12px; 
+    }
+    .container .fundamentos > div:last-child,
+    .container .steps > div:last-child  {
+        margin-bottom: 0;
+    }
+}
+
+/* Media query for screens between 769px and 1024px wide (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+}
+
+/* Media query for screens above 1024px wide (desktops) */
+@media (min-width: 1025px) {
+
 }

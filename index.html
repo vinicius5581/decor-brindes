@@ -17,7 +17,7 @@
     <main class="home">
         <div class="container fachadas dark">
             <div class="content">
-                <h2>Criação e Instalaçao de Fachadas de Lona </h2>
+                <h2>Criação e Instalação de Fachadas de Lona </h2>
                 <h3>Da criação de arte gráfica à instalação, nossos profissionais qualificados cuidam de todas as etapas para criar a fachada perfeita para o seu negócio.</h3>
                 <div class="steps">
                     <div>
@@ -55,6 +55,7 @@
         <div class="container projetos dark">
             <div class="content">
                 <h3>Projetos</h3>
+                
             </div>
         </div>
         <div class="container sobrenos">
@@ -105,5 +106,33 @@
             button_text: "Peça já o seu orçamento",
         });
     </script>
+    <!-- Add the Instagram JavaScript code here -->
+    <script>
+        const instagram = require('instagram');
+
+        // Get the user's Instagram ID
+        const userId = 'decorbrindes7';
+
+        // Get the user's photos
+        const photos = await instagram.getPhotos(userId);
+
+        console.log(photos);
+
+        // Iterate over the photos and embed them on the website
+        for (const photo of photos) {
+            const img = document.createElement('img');
+            img.src = photo.images.standard_resolution.url;
+            document.body.appendChild(img);
+        }
+    </script>
+</body>
+</html>
+Please note that the provided JavaScript code uses the require function, which is typically used in Node.js environments. If you're working in a browser environment, you might need to use a different approach to fetch Instagram photos and embed them on your website. You might consider using the Instagram Graph API or other suitable methods for interacting with Instagram content within a web browser.
+
+
+
+
+
+
 </body>
 </html>
