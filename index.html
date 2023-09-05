@@ -99,40 +99,12 @@
             link: "https://wa.me/+556286410505",
             user: {
             name: "Junior",
-                avatar: "https://randomuser.me/api/portraits/women/66.jpg",
+                avatar: "images/OsmarSantanaJr.jpeg",
                 status: "Costuma responder dentro de uma hora",
             },
             text: `Olá 👋<br><br>Estou aqui para te ajudar. Me fale um pouco sobre as suas necessidades e ficarei feliz em te atender 🤓`,
             button_text: "Peça já o seu orçamento",
         });
-    </script>
-    <!-- Add the Instagram JavaScript code here -->
-    <script>
-        const instagram = require('instagram');
-
-        // Get the user's Instagram ID
-        const userId = 'decorbrindes7';
-
-        // Get the user's photos
-        const photos = await instagram.getPhotos(userId);
-
-        console.log(photos);
-
-        // Iterate over the photos and embed them on the website
-        for (const photo of photos) {
-            const img = document.createElement('img');
-            img.src = photo.images.standard_resolution.url;
-            document.body.appendChild(img);
-        }
-    </script>
-</body>
-</html>
-Please note that the provided JavaScript code uses the require function, which is typically used in Node.js environments. If you're working in a browser environment, you might need to use a different approach to fetch Instagram photos and embed them on your website. You might consider using the Instagram Graph API or other suitable methods for interacting with Instagram content within a web browser.
-
-
-
-
-
-
+    </script>     
 </body>
 </html>
