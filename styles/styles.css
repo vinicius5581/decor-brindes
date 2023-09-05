@@ -1,0 +1,63 @@
+ /* Add your CSS styles here */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #fff;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 40vw;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container .fundamentos,
+.container .steps {
+    display: flex;
+}
+.container .steps > div {
+    width: 25%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0 6px;
+}
+
+
+.container .fundamentos > div {
+    width: 33.33%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0 6px;
+}
+
+.container .fundamentos > div:first-child,
+.container .steps > div:first-child  {
+    margin-left: 0;
+}
+.container .fundamentos > div:last-child,
+.container .steps > div:last-child  {
+    margin-right: 0;
+}
+
+.fachada-image {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
