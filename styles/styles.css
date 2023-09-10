@@ -94,6 +94,10 @@ header .main-nav li a.active:hover::after {
     color: #fff;
 }
 
+.container.dark a{  
+    color: #fff;
+}
+
 .content {
     max-width: 1200px;
     margin: 0 auto;
