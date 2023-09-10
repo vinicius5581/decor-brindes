@@ -15,6 +15,75 @@ header {
 header img {
     max-width: 40vw;
 }
+
+header .main-nav {
+    display: flex;
+    justify-content: center;
+    margin: 14px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .main-nav li {
+    margin: 0 10px;
+}
+
+header .main-nav li a {
+    text-decoration: none;
+    color: #1a3381;
+    font-weight: bold;
+}
+
+header .main-nav li a:hover {
+    color: #333;
+}
+
+header .main-nav li a.active {
+    color: #333;
+}
+
+header .main-nav li a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin-top: 5px;
+}
+
+header .main-nav li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #1a3381;
+    margin-top: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+header .main-nav li a:hover::after {
+    transform: scaleX(1);
+}
+
+header .main-nav li a.active::after {
+    transform: scaleX(1);
+}
+
+header .main-nav li a.active:hover::after {
+    transform: scaleX(1);
+}   
+
+header .main-nav li a.active:hover {
+    color: #333;
+}
+
+header .main-nav li a.active:hover::after {
+    transform: scaleX(1);
+}
+
+
+
 .container {
     background: #fff;
     color: #1a3381;
@@ -72,8 +141,18 @@ footer {
     padding: 10px 0;
 }
 
+footer img {
+    max-width: 100%;
+    width: 10%;
+    height: auto;
+}
+
 /* Media query for screens up to 768px wide (mobile devices) */
 @media (max-width: 768px) {
+
+    header {
+        padding-bottom: 0;
+    }
 
     header img {
         max-width: 80vw
@@ -90,6 +169,44 @@ footer {
     .container .fundamentos > div:last-child,
     .container .steps > div:last-child  {
         margin-bottom: 0;
+    }
+
+    header hr {
+        display: none;
+    }
+  
+    header .main-nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    header .main-nav li {
+        margin: 0;
+    }
+
+    header .main-nav li a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }   
+    
+    header .main-nav li a:first-child {
+        border-top: 1px solid #ccc;
+    }   
+
+    header .main-nav li a::after {
+        display: none;
+    }   
+
+    header .main-nav li a:hover {
+        color: #333;
+    }
+
+    footer img {
+        max-width: 100%;
+        width: 80%;
+        height: auto;
     }
 }
 
