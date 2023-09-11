@@ -138,6 +138,29 @@ header .main-nav li a.active:hover::after {
     max-width: 100%;
     height: auto;
 }
+
+
+
+
+/* Carousel */
+
+.carousel-item {    
+    height: 350px;    
+    background-size: cover;
+}
+
+.carousel-item .slide-content {
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #1a3381;
+}
+
+
+/* Footer */
+
 footer {
     background-color: #333;
     color: #fff;
