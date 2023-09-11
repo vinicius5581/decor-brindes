@@ -156,6 +156,7 @@ header hr:last-child {
 .carousel-item .slide-content {
     box-sizing: border-box;
     padding: 12px;
+    
 }
 
 .slick-prev:before, .slick-next:before {
@@ -164,7 +165,6 @@ header hr:last-child {
 
 
 /* Footer */
-
 footer {
     background-color: #333;
     color: #fff;
