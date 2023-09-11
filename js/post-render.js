@@ -23,10 +23,11 @@ new WAChatBox({
 $('#destaques').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
-    dots: true,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    dots: false,
     infinite: true,
+    arrows: false,
     // rtl: true,
 });
 

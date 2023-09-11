@@ -8,7 +8,7 @@ body {
 header {
     background-color: #fff;
     color: black;
-    padding: 10px 0;
+    padding: 10px 0 0;
     text-align: center;
 }
 
@@ -16,12 +16,15 @@ header img {
     max-width: 40vw;
 }
 
-header .main-nav {
+header ul.main-nav {
     display: flex;
     justify-content: center;
     margin: 14px 0 0;
-    padding: 0;
+    padding: 7px 0 0;
     list-style: none;
+    border-spacing: 1px 0;
+    border-color: black;
+    border-style: solid; 
 }
 
 header .main-nav li {
@@ -82,6 +85,9 @@ header .main-nav li a.active:hover::after {
     transform: scaleX(1);
 }
 
+header hr:last-child {
+    margin: 0;
+}
 
 
 .container {
@@ -139,14 +145,12 @@ header .main-nav li a.active:hover::after {
     height: auto;
 }
 
-
-
-
 /* Carousel */
 
 .carousel-item {    
     height: 350px;    
-    background-size: cover;
+    background-size: cover;    
+    box-sizing: border-box;
 }
 
 .carousel-item .slide-content {
@@ -179,6 +183,10 @@ footer img {
 
     header {
         padding-bottom: 0;
+    }
+
+    header ul.main-nav {
+        padding: 0;
     }
 
     header img {
